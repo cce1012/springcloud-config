@@ -1,0 +1,16 @@
+spring:
+    profiles:
+        active:
+        - dev
+---
+spring:
+    profiles: dev       # 开发环境
+    application:
+        name: springcloud-config-cce-dev
+---
+spring:
+    profiles: test      # 测试环境
+    application:
+        name: springcloud-config-cce-test
+
+# 文件保存为 UTF-8 格式
